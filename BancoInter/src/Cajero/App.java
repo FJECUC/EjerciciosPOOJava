@@ -49,7 +49,7 @@ public class App {
 					break;
 				case 2:
 					while(true){
-						System.out.println("Ingrese la cantidad a retirar: ");
+						System.out.print("Ingrese la cantidad a retirar: ");
 						float ret = Float.parseFloat(buffer.readLine());
 						if (ret<=0){
 								System.out.println("ERROR. Ingrese un monto valido.");
