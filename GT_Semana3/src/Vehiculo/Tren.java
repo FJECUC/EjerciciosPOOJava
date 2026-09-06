@@ -1,11 +1,11 @@
 package Vehiculo;
 
-public class Automovil extends VehiculoTerrestre{
-    
-    private float pctDep = 0.25f;
+public class Tren extends VehiculoTerrestre{
+            
+    private float pctDep = 0.45f;
 
-    public Automovil(){}
-    public Automovil(float precio_auto){
+    public Tren(){}
+    public Tren(float precio_auto){
         this.precioInicial = precio_auto;
     }
     public void setpctDepreciacion(float porcentaje){
@@ -23,7 +23,7 @@ public class Automovil extends VehiculoTerrestre{
 
     @Override
     public float depreciacion(){
-        MontoDeprec = pctDep*precioInicial;
+        MontoDeprec = precioInicial * pctDep;
         return MontoDeprec;
     }
 }
